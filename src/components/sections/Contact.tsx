@@ -76,7 +76,7 @@ export default function Contact() {
                   value={form.message}
                   onChange={handleChange}
                   required
-                  className="w-full bg-transparent border-0 border-b border-grid-cyan/40 focus:border-grid-cyan outline-none font-body text-sm text-grid-white placeholder-grid-border py-2 resize-none transition-colors"
+                  className="w-full bg-transparent border-0 border-b border-grid-cyan/40 focus:border-grid-cyan outline-none font-body text-sm text-grid-white placeholder-grid-muted/50 py-2 resize-none transition-colors"
                 />
               </div>
               <div className="pt-2">
@@ -109,7 +109,7 @@ function TerminalInput({
         value={value}
         onChange={onChange}
         required
-        className="w-full bg-transparent border-0 border-b border-grid-cyan/40 focus:border-grid-cyan outline-none font-body text-sm text-grid-white placeholder-grid-border py-2 transition-colors"
+        className="w-full bg-transparent border-0 border-b border-grid-cyan/40 focus:border-grid-cyan outline-none font-body text-sm text-grid-white placeholder-grid-muted/50 py-2 transition-colors"
       />
     </div>
   )

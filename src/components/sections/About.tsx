@@ -115,7 +115,7 @@ export default function About() {
               <p className="font-display text-xs text-grid-muted tracking-widest uppercase mb-2">// CONTACT INFO</p>
               <div className="space-y-1">
                 <p className="font-body text-sm text-grid-white">📧 {personal.email}</p>
-                <p className="font-body text-sm text-grid-white">📱 {personal.phone}</p>
+                {/* <p className="font-body text-sm text-grid-white">📱 {personal.phone}</p> */}
                 <p className="font-body text-sm text-grid-white">📍 {personal.location}</p>
               </div>
             </TronCard>

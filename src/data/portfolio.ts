@@ -3,7 +3,7 @@ export const personal = {
   title:    'Software Developer',
   tagline:  'Building impactful software across the stack.',
   email:    'nurariefilman@gmail.com',
-  phone:    '+6012-280 4181',
+  // phone:    '+6012-280 4181',
   location: 'Seri Kembangan, Selangor',
   linktree: 'https://linktr.ee/ariefilman',
 }
