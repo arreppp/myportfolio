@@ -5,11 +5,6 @@ import SectionTitle from '../ui/SectionTitle'
 import TronCard from '../ui/TronCard'
 import GlowButton from '../ui/GlowButton'
 
-const contactLinks = [
-  { icon: '✉', label: 'Email',    value: personal.email,    href: `mailto:${personal.email}` },
-  { icon: '📱', label: 'Phone',   value: personal.phone,    href: `tel:${personal.phone}`    },
-  { icon: '🔗', label: 'Linktree', value: 'linktr.ee/ariefilman', href: personal.linktree    },
-]
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
