@@ -61,7 +61,7 @@ export default function About() {
             <TronCard accent="cyan">
               <p className="font-display text-xs text-grid-muted tracking-widest uppercase mb-3">// BIO</p>
               <p className="font-body text-base text-grid-white leading-relaxed">
-                Full-Stack Developer based in {personal.location}. I specialise in building scalable REST APIs and modern frontend
+                Software Developer based in {personal.location}. I specialise in building scalable REST APIs and modern frontend
                 experiences — from architecting 89 production APIs to resolving critical production bugs during major framework migrations.
               </p>
               <p className="font-body text-base text-grid-muted leading-relaxed mt-3">

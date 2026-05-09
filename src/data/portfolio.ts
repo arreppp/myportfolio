@@ -1,6 +1,6 @@
 export const personal = {
   name:     'Nurarief Ilman Bin Jefri',
-  title:    'Full-Stack Developer',
+  title:    'Software Developer',
   tagline:  'Building impactful software across the stack.',
   email:    'nurariefilman@gmail.com',
   phone:    '+6012-280 4181',

@@ -150,18 +150,18 @@ export default function Hero() {
             </span>
           </div>
 
-          {/* Name */}
+          {/* Name — single line */}
           <div className="relative">
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold uppercase leading-tight tracking-wider">
-              {/* line 1 */}
-              <span className="block text-grid-white relative">
-                <span className="invisible">NURARIEF</span>
+            <h1 className="font-display text-4xl md:text-5xl font-bold uppercase leading-tight tracking-wider whitespace-nowrap">
+              {/* "NURARIEF " — white */}
+              <span className="relative inline-block text-grid-white">
+                <span className="invisible">NURARIEF&nbsp;</span>
                 <span className="absolute inset-0">
-                  <Tw text="NURARIEF" delay={T.name1} speed={90} />
+                  <Tw text="NURARIEF " delay={T.name1} speed={90} />
                 </span>
               </span>
-              {/* line 2 */}
-              <span className="block text-neon-cyan relative">
+              {/* "ILMAN" — cyan */}
+              <span className="relative inline-block text-grid-white">
                 <span className="invisible">ILMAN</span>
                 <span className="absolute inset-0">
                   <Tw text="ILMAN" delay={T.name2} speed={90} />
@@ -208,12 +208,12 @@ export default function Hero() {
           </motion.div>
 
           {/* Location */}
-          <div className="relative flex gap-6 text-xs font-display tracking-widest text-grid-border uppercase">
+          {/* <div className="relative flex gap-6 text-xs font-display tracking-widest text-grid-border uppercase">
             <span className="invisible">📍 {personal.location}</span>
             <span className="absolute inset-0">
               <Tw text={`📍 ${personal.location}`} delay={T.loc} speed={55} />
             </span>
-          </div>
+          </div> */} 
         </div>
 
         {/* Right: Identity Disc */}
