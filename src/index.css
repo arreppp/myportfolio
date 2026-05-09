@@ -1,0 +1,74 @@
+@import '@fontsource/orbitron/400.css';
+@import '@fontsource/orbitron/700.css';
+@import '@fontsource/rajdhani/400.css';
+@import '@fontsource/rajdhani/500.css';
+@import '@fontsource/rajdhani/600.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { cursor: none; }
+
+body {
+  background-color: #000408;
+  color: #e0f7fa;
+  font-family: 'Rajdhani', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: #00e5ff;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px #00e5ff;
+  transition: transform 0.1s;
+}
+
+.cursor-ring {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #00e5ff66;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: all 0.15s ease;
+}
+
+.cursor-ring.hovering {
+  width: 40px;
+  height: 40px;
+  border-color: #ff6d00aa;
+}
+
+.text-neon-cyan  { color: #00e5ff; text-shadow: 0 0 10px #00e5ff88; }
+.text-neon-orange{ color: #ff6d00; text-shadow: 0 0 10px #ff6d0088; }
+
+.scanlines::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 229, 255, 0.015) 2px,
+    rgba(0, 229, 255, 0.015) 4px
+  );
+  pointer-events: none;
+  z-index: 100;
+}
+
+html { scroll-behavior: smooth; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #000408; }
+::-webkit-scrollbar-thumb { background: #00e5ff44; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #00e5ff88; }
