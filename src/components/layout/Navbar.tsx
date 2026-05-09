@@ -41,7 +41,7 @@ export default function Navbar() {
           onClick={e => { e.preventDefault(); handleNav('#hero') }}
           className="font-display text-xl font-bold text-neon-cyan tracking-widest animate-flicker"
         >
-          ARIEF.EXE
+          ARIEF.GRID
         </a>
 
         {/* Desktop links */}

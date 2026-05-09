@@ -31,7 +31,7 @@ export default function Contact() {
         <SectionTitle label="// ESTABLISH LINK" title="Contact" accent="cyan" />
 
         {/* Contact link cards */}
-        <div className="grid sm:grid-cols-3 gap-4 mb-12">
+        {/* <div className="grid sm:grid-cols-3 gap-4 mb-12">
           {contactLinks.map((c, i) => (
             <motion.a
               key={c.label}
@@ -50,7 +50,7 @@ export default function Contact() {
               </TronCard>
             </motion.a>
           ))}
-        </div>
+        </div> */}
 
         {/* Contact form */}
         <motion.div
