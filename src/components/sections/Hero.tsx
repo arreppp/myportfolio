@@ -21,11 +21,11 @@ const T = {
   label:    3.5,   // "// IDENTITY CONFIRMED"
   name1:    4.1,   // "NURARIEF"
   name2:    5.0,   // "ILMAN"
-  title:    5.9,   // "FULL-STACK DEVELOPER"
-  para:     6.8,   // paragraph
-  btns:     7.0,   // buttons fade in
-  loc:      7.6,   // location
-  scroll:   8.5,   // scroll indicator
+  title:    5.9,   // "SOFTWARE DEVELOPER"  (~18 chars × 50ms = 0.9s → done ~6.8s)
+  para:     7.0,   // tagline paragraph     (~134 chars × 16ms = 2.1s → done ~9.1s)
+  btns:     9.3,   // buttons — after all text finishes
+  loc:      9.5,   // location
+  scroll:   9.8,   // scroll indicator
 }
 
 // ── Typewriter hook ───────────────────────────────────────────────────────────
@@ -181,7 +181,7 @@ export default function Hero() {
           </div>
 
           {/* Tagline paragraph */}
-          <div className="relative font-body text-base sm:text-lg text-grid-muted max-w-lg leading-relaxed">
+          <div className="relative font-display text-xs sm:text-sm text-grid-muted max-w-lg leading-relaxed tracking-wide">
             <span className="invisible">
               {personal.tagline} Specialising in REST APIs, modern frontend frameworks, and end-to-end system integration.
             </span>
