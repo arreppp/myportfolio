@@ -77,7 +77,7 @@ function Tw({
 // =============================================================================
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center px-6 pt-24 pb-12 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center px-4 sm:px-6 pt-24 pb-12 overflow-hidden">
 
       {/* ── HUD connector line: draws from disc edge → name (desktop) ── */}
       <div className="hidden lg:block absolute inset-0 pointer-events-none z-10">
@@ -137,7 +137,7 @@ export default function Hero() {
       </div>
 
       {/* ── Main grid ── */}
-      <div className="relative z-20 max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-20 max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
         {/* Left: typed text — placeholder reserves space, typing fills in-place */}
         <div className="space-y-6">
@@ -152,7 +152,7 @@ export default function Hero() {
 
           {/* Name — single line */}
           <div className="relative">
-            <h1 className="font-display text-4xl md:text-5xl font-bold uppercase leading-tight tracking-wider whitespace-nowrap">
+            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold uppercase leading-tight tracking-wider whitespace-nowrap">
               {/* "NURARIEF " — white */}
               <span className="relative inline-block text-grid-white">
                 <span className="invisible">NURARIEF&nbsp;</span>
@@ -173,7 +173,7 @@ export default function Hero() {
           </div>
 
           {/* Title */}
-          <div className="relative font-display text-xl md:text-2xl text-neon-cyan tracking-[0.2em] uppercase">
+          <div className="relative font-display text-base sm:text-xl md:text-2xl text-neon-cyan tracking-[0.2em] uppercase">
             <span className="invisible">{personal.title}</span>
             <span className="absolute inset-0">
               <Tw text={personal.title} delay={T.title} speed={50} />
@@ -181,7 +181,7 @@ export default function Hero() {
           </div>
 
           {/* Tagline paragraph */}
-          <div className="relative font-body text-lg text-grid-muted max-w-lg leading-relaxed">
+          <div className="relative font-body text-base sm:text-lg text-grid-muted max-w-lg leading-relaxed">
             <span className="invisible">
               {personal.tagline} Specialising in REST APIs, modern frontend frameworks, and end-to-end system integration.
             </span>
@@ -203,8 +203,8 @@ export default function Hero() {
           >
             <GlowButton label="View Projects" variant="cyan"
               onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })} />
-            <GlowButton label="Download Resume" variant="orange"
-              onClick={() => window.open('mailto:' + personal.email)} />
+            <GlowButton label="View GitHub" variant="orange"
+              href="https://github.com/arreppp" />
           </motion.div>
 
           {/* Location */}

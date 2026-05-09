@@ -5,7 +5,7 @@ import TronCard from '../ui/TronCard'
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative py-24 px-6">
+    <section id="projects" className="relative py-16 md:py-24 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <SectionTitle label="// PROJECT LOG" title="Projects" accent="orange" />
 

@@ -5,7 +5,7 @@ import TronCard from '../ui/TronCard'
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative py-24 px-6">
+    <section id="experience" className="relative py-16 md:py-24 px-4 sm:px-6">
       <div className="max-w-5xl mx-auto">
         <SectionTitle label="// WORK LOG" title="Experience" accent="orange" />
 
